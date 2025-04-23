@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>区块链学院 ERC20 DAPP</title>
+</head>
+
+<body>
+    <div class="center">
+
+        <div style="width: 100px;border: 2px solid #000000;margin-top: 5px; margin-left: 5px;padding-left: 5px;">
+            <strong> 众筹项目平台</strong>
+        </div>
+        <hr style="border: 1px solid black;">
+        <div>
+            标题&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input style="width: 350px;border: #000000 solid 1px;" text" id="zhanghuan_title" placeholder="输入标题">
+        </div>
+        <div>
+            内容&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input style="width: 350px;height: 100px;border: #000000 solid 1px;" text" id="zhanghuan_content" placeholder="输入内容">
+        </div>
+
+        <div>项目开始时间&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input style="width: 350px;border: #000000 solid 1px;" text" id="zhanghuan_starttime" placeholder="项目开始时间">
+        </div>
+
+        <div>项目结束时间&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input style="width: 350px;border: #000000 solid 1px;" text" id="zhanghuan_endtime" placeholder="项目结束时间">
+        </div>
+        <div>需要筹集的金额数量
+            <input style="width: 350px;border: #000000 solid 1px;" text" id="zhanghuan_aimamount" placeholder="需要筹集的金额数量">
+        </div>
+
+        <button type="submit" class="zhanghuan_creatprojectbutton">创建众筹项目</button>
+        <br>
+        <br>
+        <div style="margin: 0 auto;width: 500px;height:100px;border: #000000 solid 1px;text-align: left;">提示框
+            <hr style="border: 1px solid black;">
+            <br>
+            <h4><span style="margin-left: 200px; padding: 20px; vertical-align: top;"  id = zhanghuan_tip></span></h4>
+        </div>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <div style="border: #000000 solid 2px;">
+            <div style="width: 100px;border: 2px solid #000000;margin-top: 5px; margin-left: 5px;padding-left: 5px;">
+                <strong> 众筹项目平台</strong>
+            </div>
+            <hr style="border: 1px solid black;">
+            <div>
+                众筹项目编号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input style="width: 350px;border: #000000 solid 1px;" text" id="projectid1" placeholder="众筹项目编号">
+                <br>
+                <br>
+            </div>
+            <button type="submit" class="enableEthereumButton">查看</button>
+            <hr style="width: 300px;border: 1px solid black;">
+            <p>查看人数 ：<span id = zhanghuan_tip2></span></p>
+            <p>众筹项目共获得金额合计 ：<span id = zhanghuan_tip3></span></p>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="border: #000000 solid 2px;">
+            <div style="width: 100px;border: 2px solid #000000;margin-top: 5px; margin-left: 5px;padding-left: 5px;">
+                <strong> 众筹项目平台</strong>
+            </div>
+            <hr style="border: 1px solid black;">
+            <div>
+                众筹项目编号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input style="width: 350px;border: #000000 solid 1px;" text" id="projectid2" placeholder="众筹项目编号">
+            </div>
+            <div>
+                捐赠的金额 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input style="width: 350px;border: #000000 solid 1px;" text" id="donateamount" placeholder="捐赠的金额">
+            </div>
+            <button type="submit" class="donateEthereumButton">捐赠</button>
+            <br>
+            <br> 
+            <div style="margin: 0 auto;width: 500px;height:100px;border: #000000 solid 1px;text-align: left;">提示框
+                <hr style="border: 1px solid black;">
+                <h4><span style="margin-left: 200px; padding: 20px;" id = zhanghuan_tip4></span></h4>
+            </div>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
